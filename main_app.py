@@ -39,4 +39,4 @@ my_map.add_child(fgp)
 
 my_map.add_child(folium.LayerControl())
 
-my_map.save('Map1.html')
+my_map.save('index.html')

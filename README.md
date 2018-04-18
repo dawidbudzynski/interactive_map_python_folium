@@ -9,6 +9,10 @@
 - displaying volcanoes on interactive map
 - displaying countries in different colours based on population
 
+**Libraries used:**
+- Folium
+- Pandas
+
 **Requirements:**
 - Python 3.5+
 - pandas 0.22.0

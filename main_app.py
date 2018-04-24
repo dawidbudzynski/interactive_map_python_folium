@@ -34,8 +34,9 @@ fgp.add_child(folium.GeoJson(data=open('world.json', 'r', encoding='utf-8-sig').
                              else 'green' if 20000000 <= x['properties']['POP2005'] < 40000000
                              else 'blue'}))
 
-my_map.add_child(fgv)
 my_map.add_child(fgp)
+my_map.add_child(fgv)
+
 
 my_map.add_child(folium.LayerControl())
 

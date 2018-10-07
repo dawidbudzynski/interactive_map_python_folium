@@ -1,7 +1,7 @@
 import folium
 import pandas
 
-data = pandas.read_csv('Volcanoes_USA.txt')
+data = pandas.read_csv('data/Volcanoes_USA.txt')
 lat = list(data['LAT'])
 lon = list(data['LON'])
 elev = list(data['ELEV'])
@@ -29,7 +29,7 @@ for lt, ln, el in zip(lat, lon, elev):
 
 fgp = folium.FeatureGroup(name='Population')
 
-fgp.add_child(folium.GeoJson(data=open('world.json', 'r', encoding='utf-8-sig').read(),
+fgp.add_child(folium.GeoJson(data=open('data/world.json', 'r', encoding='utf-8-sig').read(),
                              style_function=lambda x: {'fillColor': 'yellow' if x['properties']['POP2005'] < 20000000
                              else 'green' if 20000000 <= x['properties']['POP2005'] < 40000000
                              else 'blue'}))

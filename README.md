@@ -1,19 +1,24 @@
 # Interactive map 
 
-**A web map visualizing volcano locations and population data**
+## General info
+A web map visualizing volcano locations and population data
 
-**Link to the website:**
-**https://dawidbudzynski.github.io/interactive_map_python_folium/**
+## Main functions
+* displaying volcanoes on interactive map
+* displaying countries in different colours based on population
 
-**Main functions:**
-- displaying volcanoes on interactive map
-- displaying countries in different colours based on population
+## Technologies
+* Python
+* Folium
+* Pandas
 
-**Libraries used:**
-- Folium
-- Pandas
+## Setup
+To run this project, install required libraries using pip:
 
-**Requirements:**
-- Python 3.5+
-- pandas 0.22.0
-- folium 0.5.0
+```
+$ pip install -r requirements.txt
+$ python main_app.py
+```
+
+## Demo
+### https://dawidbudzynski.github.io/interactive_map_python_folium/
